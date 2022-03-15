@@ -13,7 +13,8 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		paths: {
-			base: dev ? '' : '/docs'
+			base: dev ? '' : '/docs',
+			assets: dev ? '' : '/docs',
 		},
 		adapter: adapter({
 			pages: 'docs',
