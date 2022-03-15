@@ -12,13 +12,9 @@ const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		paths: {
-			base: dev ? '' : '/docs',
-			assets: dev ? '' : '/docs',
-		},
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
+			pages: 'build',
+			assets: 'build',
 			fallback: null
 		}),
 	}
